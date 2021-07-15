@@ -5,13 +5,14 @@ module.exports = () => {
         restos: []
     }
 
-    for (let i = 1; i <= 50; i++) {
+    for (let i = 1; i <= 25; i++) {
         let resto = {};
 
         resto.id = i;
         resto.userId = i + 100;
-        resto.name = faker.name.firstName();
+        resto.name = faker.company.companyName();
         resto.location = faker.address.streetAddress();
+        resto.image = faker.image.image();
 
         data.restos.push(resto);
     }
