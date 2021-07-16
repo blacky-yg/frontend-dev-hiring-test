@@ -1,0 +1,7 @@
+{
+  "display": "standalone",
+  "lang": "en",
+  "name": "my_find_resto",
+  "short_name": "my_find_resto",
+  "start_url": "/?utm_source=web_app_manifest"
+}
