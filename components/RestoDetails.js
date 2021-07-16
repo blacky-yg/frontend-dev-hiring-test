@@ -1,22 +1,49 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { Image, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
-export default function RestoDetails({ navigation }) {
+export default function RestoDetails({ item }) {
+
+    const getResto = (resto) => {
+      alert('Resto : ' + resto.id + ' Name : ' + resto.name);
+    };
+
     return (
-        <View style={styles.restoDetails}>
-            <Text> Resto Details </Text>
-            <Button
-                title="Go back to list"
-                onPress={() => navigation.goBack()}
-            />
-        </View>
+      <View style={styles.resto} onPress={() => getResto(item)}>
+
+        <TouchableOpacity onPress={() => getResto(item)}>
+
+          <Image
+            style={styles.tinyLogo}
+            source={{
+                uri: item.image
+            }}
+          />
+
+        </TouchableOpacity>
+
+        <Text style={styles.restoStyle} onPress={() => getResto(item)}>
+          {item.name.toUpperCase()} |
+          {item.location}
+        </Text>
+
+      </View>
     );
 };
 
 const styles = StyleSheet.create({
-    restoDetails: {
-        flex: 1,
-        alignContent: 'center',
-        justifyContent: 'center'
-    }
+  resto: {
+    flexDirection: 'row',
+    padding: 5
+  },
+  tinyLogo: {
+    width: 50,
+    height: 50,
+  },
+  restoStyle: {
+    padding: 10,
+    flexDirection: 'row',
+    marginLeft: 10,
+    marginTop: 7,
+    textAlign: 'center'
+  }
 });

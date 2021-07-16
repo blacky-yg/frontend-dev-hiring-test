@@ -1,39 +1,43 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Image, StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import splash_img from '../assets/splash_image.png';
 
 export default function Main({ navigation }) {
     return (
         <View style={styles.container}>
 
-            <TouchableOpacity
-              style={styles.navigationRight}
-              onPress={() => navigation.navigate('RestoList')}
+          <TouchableOpacity
+            style={styles.navigationRight}
+            onPress={() => navigation.navigate('RestoList')}
+          >
+            <Text style={styles.skip}>Skip</Text>
+          </TouchableOpacity>
+
+          <Image source={splash_img} style={styles.splash_image}/>
+
+          <Text style={styles.title}>
+            Find The Food You Want
+          </Text>
+
+          <Text style={styles.description}>
+            Our app helps you dinf the right food for every mood, any time & any day
+          </Text>
+
+          <TouchableOpacity
+            style={styles.touchable}
+          >
+
+            <Text
+              onPress={() => navigation.navigate('Delivery')}
+              style={styles.button}
             >
-              <Text style={styles.skip}>Skip</Text>
-            </TouchableOpacity>
-
-            <Image source={splash_img} style={styles.splash_image}/>
-
-            <Text style={styles.title}>
-                Find The Food You Want
+              {'>'}
             </Text>
 
-            <Text style={styles.description}>
-                Our app helps you dinf the right food for every mood, any time & any day
-            </Text>
+          </TouchableOpacity>
 
-            <TouchableOpacity
-                style={styles.touchable}
-            >
-              <Button
-                  onPress={() => navigation.navigate('Delivery')}
-                  title=">"
-              />
-            </TouchableOpacity>
-
-            <StatusBar style="auto" />
+          <StatusBar style="auto" />
         </View>
     );
 };
@@ -82,5 +86,10 @@ const styles = StyleSheet.create({
       fontSize: 30,
       alignSelf: 'flex-end',
       marginRight: 20
+    },
+    button: {
+      fontSize: 30,
+      fontWeight: 'bold',
+      color: 'white'
     }
 });

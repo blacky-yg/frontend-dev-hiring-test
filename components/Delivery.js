@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image, Button } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import delivery_img from '../assets/delivery_image.png';
 
 export default function Delivery({ navigation }) {
@@ -37,10 +37,12 @@ export default function Delivery({ navigation }) {
             <TouchableOpacity
                 style={styles.touchable}
             >
-              <Button
-                  onPress={() => navigation.navigate('RestoList')}
-                  title=">"
-              />
+                <Text
+                    onPress={() => navigation.navigate('RestoList')}
+                    style={styles.button}
+                >
+                    {'>'}
+                </Text>
             </TouchableOpacity>
         </View>
     );
@@ -102,5 +104,10 @@ const styles = StyleSheet.create({
     back: {
         fontSize: 30,
         alignSelf: 'flex-end',
+    },
+    button: {
+        fontSize: 30,
+        fontWeight: 'bold',
+        color: 'white'
     }
 });
