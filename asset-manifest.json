@@ -1,19 +1,21 @@
 {
   "files": {
-    "app.js": "/frontend-dev-hiring-test/static/js/app.f26af216.chunk.js",
-    "app.js.map": "/frontend-dev-hiring-test/static/js/app.f26af216.chunk.js.map",
+    "app.js": "/frontend-dev-hiring-test/static/js/app.b46372fc.chunk.js",
+    "app.js.map": "/frontend-dev-hiring-test/static/js/app.b46372fc.chunk.js.map",
     "runtime~app.js": "/frontend-dev-hiring-test/static/js/runtime~app.52bfda01.js",
     "runtime~app.js.map": "/frontend-dev-hiring-test/static/js/runtime~app.52bfda01.js.map",
-    "static/js/2.4a1f7007.chunk.js": "/frontend-dev-hiring-test/static/js/2.4a1f7007.chunk.js",
-    "static/js/2.4a1f7007.chunk.js.map": "/frontend-dev-hiring-test/static/js/2.4a1f7007.chunk.js.map",
+    "static/js/2.ae1df51f.chunk.js": "/frontend-dev-hiring-test/static/js/2.ae1df51f.chunk.js",
+    "static/js/2.ae1df51f.chunk.js.map": "/frontend-dev-hiring-test/static/js/2.ae1df51f.chunk.js.map",
     "index.html": "/frontend-dev-hiring-test/index.html",
     "manifest.json": "/frontend-dev-hiring-test/manifest.json",
     "serve.json": "/frontend-dev-hiring-test/serve.json",
-    "static/js/2.4a1f7007.chunk.js.LICENSE.txt": "/frontend-dev-hiring-test/static/js/2.4a1f7007.chunk.js.LICENSE.txt"
+    "static/js/2.ae1df51f.chunk.js.LICENSE.txt": "/frontend-dev-hiring-test/static/js/2.ae1df51f.chunk.js.LICENSE.txt",
+    "static/media/delivery_image.png": "/frontend-dev-hiring-test/static/media/delivery_image.66e905b3.png",
+    "static/media/splash_image.png": "/frontend-dev-hiring-test/static/media/splash_image.dfaf6083.png"
   },
   "entrypoints": [
     "static/js/runtime~app.52bfda01.js",
-    "static/js/2.4a1f7007.chunk.js",
-    "static/js/app.f26af216.chunk.js"
+    "static/js/2.ae1df51f.chunk.js",
+    "static/js/app.b46372fc.chunk.js"
   ]
 }
